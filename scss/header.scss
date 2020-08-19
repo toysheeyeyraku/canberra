@@ -1,9 +1,9 @@
 
 
  
-  $header-height :90px;
+  $header-height :126px;
   $header-height-tablet:75px;
-  $header-height-mobile:50px;
+  $header-height-mobile:60px;
 .nav-btn {
     
    
@@ -91,10 +91,10 @@ main{
           width: 100%;
       }
       @media screen and (max-width: $tablet){
-        max-width: 125px;
+        max-width: 60px;
       }
       @media screen and (max-width: $mobile){
-        max-width: 100px;
+        max-width: 50px;
       }
       
   }
@@ -165,8 +165,10 @@ main{
   li{
       font-size: 20px;
       color: #000;
-      margin-right: 10px;
-      
+      margin-right: 20px;
+      @media screen and (max-width:1280px){
+        margin-right: 10px;
+      }
       box-sizing: border-box;
       text-align: center;
       @media screen and (max-width: $tablet){
@@ -184,8 +186,8 @@ main{
           }
       }
       a:hover {
-        color:#1bb90b ;
-        transition: color 0.5s;
+        text-shadow: 0px 0 0 #000000;
+        transition: all 0.1s;
        
       }
       .iim {
@@ -217,7 +219,7 @@ main{
   }
   // .nav__btn
   .additional {
-    margin-left: 150px;
+    margin-left: 50px;
     @media screen and (max-width: 1150px){
       margin-left: 25px;
       
@@ -231,7 +233,10 @@ main{
     }
     li {
       text-transform: unset;
-      margin-right: 20px;
+      margin-right: 50px;
+      @media screen and (max-width:1280px){
+        margin-right: 20px;
+      }
       @media screen and (max-width: 991px){
         margin-right: 0px;
         
@@ -240,6 +245,61 @@ main{
     a{
       width: fit-content;
       margin: 0 auto;
+    }
+    .search-block {
+      display: flex;
+      margin: 0 auto;
+      border: 1px solid #E0E0E0;
+      align-items: center;
+      box-sizing: border-box;
+      max-width: 283px;
+      @media screen and (max-width:1280px){
+       max-width: 200px;
+      }
+      @media screen and (max-width:991px){
+        max-width:150px;
+        margin: 0 auto ;
+       }
+      width: 100%;
+      padding: 12px 20px;
+      height: 42px;
+      button {
+        border: none;
+        background : none;
+        width: 18px;
+        height: 18px;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      input {
+        box-sizing: border-box;
+        border: none;
+        background: none;
+        margin-left: 10px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: flex-end;
+        text-transform: capitalize;
+
+        /* Gray 3 */
+        color: #000000;
+        
+        &::placeholder{
+          font-size: 12px;
+          color: #828282;
+        }
+      }
     }
     .call-us-block {
       display: flex;
@@ -271,35 +331,8 @@ main{
         color: #000000;
       }
     }
-    .telezka {
-      position: relative;
-      .r {
-        position: absolute;
-        top: -10px;
-        left: -10px;
-        width: 20px;
-        height: 20px;
-        background: #138A07;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-         p {
-          
-          font-weight: bold;
-          font-size: 10px;
-          line-height: 12px;
-          /* identical to box height */
-
-         
-          text-transform: uppercase;
-
-          /* #333333 */
-
-          color: #FFFFFF;
-         }
-      }
-    }
+    
+    
     
   }
  
@@ -364,15 +397,4 @@ main{
     -o-transition: transform 0.6s ease-out;
     transition: transform 0.6s ease-out;
     transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
-}
-.logo-shift {
-  margin-top: -22px;
-  @media screen and (max-width: 991px){
-   margin-top: -10px;
-    
-  }
-  @media screen and (max-width: 565px){
-    margin-top: 0px;
-     
-   }
 }
