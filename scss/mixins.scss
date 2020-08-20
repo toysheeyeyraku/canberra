@@ -16,9 +16,9 @@
     max-width: 200px;
     width: 100%;
     background: #EE6000;;
+    font-weight: 500;
    
    
-    font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     /* identical to box height, or 150% */
@@ -171,3 +171,42 @@ color: #138A07;
       -webkit-text-fill-color: transparent;
     }
   }
+  .punkts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 70px;
+    @media screen and (max-width:1280px) {
+        column-gap: 30px;
+       
+     }
+    @media screen and (max-width:991px) {
+        column-gap: 40px;
+        grid-template-columns: 1fr 1fr;
+     }
+     @media screen and (max-width:565px) {
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+     }
+   
+    row-gap: 20px;
+    p {
+        @include fluid-font(14,16);
+        line-height: 19px;
+        /* identical to box height */
+
+       
+
+        /* text */
+        position: relative;
+        color: #6D727A;
+        padding-left: 40px;
+        &::before {
+            content: url('../img/orangeg.svg');
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 0px;
+            left: 0px;;
+        }
+    }
+}
