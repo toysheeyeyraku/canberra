@@ -18,11 +18,12 @@ $(document).ready(function () {
       }
   }
   //paragon-slider-testimonial
-  $('.slider2').slick({
+  $('.testimonials-slider__body').slick({
     infinite: true,
     slidesToShow: 3,
-    prevArrow: $('.sl33'),
-    nextArrow: $('.sl22'),
+    prevArrow: $('.slider-arrow--prev'),
+    nextArrow: $('.slider-arrow--next'),
+    rows: 0,
     responsive: [
         {
             breakpoint: 991, // tablet breakpoint
@@ -65,8 +66,47 @@ $(document).ready(function () {
 	$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
 	$(".tab_item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
-  
+$('.canberra-home-slider1').slick({
+    infinite: true,
+    slidesToShow: 4,
+    prevArrow: $('.prevarr'),
+    nextArrow: $('.nextarr'),
+    responsive: [
+        {
+            breakpoint: 991, // tablet breakpoint
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 767, // tablet breakpoint
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 565, // tablet breakpoint
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+    
+   
+  });
+  var prevactive =null;
+  $('.arrow').click(function(){
+      if (prevactive!=null){
+        $(prevactive).removeClass("active");
+      }
+      $(this).addClass("active");
+      prevactive=this;
+  }
 
+  );
   
 
 
