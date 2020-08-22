@@ -12,10 +12,16 @@
     z-index: -1;
     
 }
+ button {
+     &:hover {
+         cursor: pointer;
+     }
+ }
 .green-but {
     max-width: 200px;
     width: 100%;
     background: #EE6000;;
+    border: none;
     font-weight: 500;
     padding: 0px 10px;
     box-sizing: border-box;

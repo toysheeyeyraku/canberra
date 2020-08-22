@@ -108,6 +108,44 @@ $('.canberra-home-slider1').slick({
 
   );
   
+  jQuery('select').each(function () {
+    var $this = jQuery(this), numberOfOptions = jQuery(this).children('option').length;
+    $this.addClass('select-hidden');
+    $this.wrap('<div class="select"></div>');
+    $this.after('<div class="select-styled  select-dft-val"></div>');
+    var $styledSelect = $this.next('div.select-styled');
+    $styledSelect.text($this.children('option').eq(0).text());
+    var $list = jQuery('<ul />', {
+        'class': 'select-options'
+    }).insertAfter($styledSelect);
+    for (var i = 0; i < numberOfOptions; i++) {
+        jQuery('<li />', {
+            text: $this.children('option').eq(i).text(),
+            rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+    var $listItems = $list.children('li');
+    $styledSelect.click(function (e) {
+        e.stopPropagation();
+        jQuery('div.select-styled.active').not(this).each(function () {
+            jQuery(this).removeClass('active').next('ul.select-options').hide();
+        });
+        jQuery(this).toggleClass('active').next('ul.select-options').toggle();
+    });
+    $listItems.click(function (e) {
+        e.stopPropagation();
+        $(this).parent().find("li").removeClass("current")
+        $(this).addClass("current")
+        $styledSelect.text(jQuery(this).text()).removeClass('active');
+        $styledSelect.text(jQuery(this).text()).removeClass('select-dft-val');
+        $this.val(jQuery(this).attr('rel')).change();
+        $list.hide();
+    });
+    jQuery(document).click(function () {
+        $styledSelect.removeClass('active');
+        $list.hide();
+    });
+});
 
 
 
