@@ -1,0 +1,23 @@
+.thank-you-home-2{
+   
+    margin-bottom: 70px !important;
+    @media screen and (max-width:991px){
+        margin-bottom: 40px !important;
+    }
+    @media screen and (max-width:565px){
+        margin-bottom: 20px !important;
+    }
+}
+.thank-you-home-4 {
+    .cards {
+        max-width: 970px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3 ,1fr);
+        @media screen and (max-width:991px){
+            grid-template-columns: repeat(2 ,1fr);
+        }
+        @media screen and (max-width:565px){
+            grid-template-columns: repeat(1 ,1fr);
+        }
+    }
+}

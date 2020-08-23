@@ -1,0 +1,90 @@
+.about-us-1 {
+    padding: 70px 0px;
+    .h {
+        font-size: 42px;
+    }
+    .inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 70px;
+        row-gap: 30px;
+        @media screen and (max-width:991px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .first {
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .cent {
+            max-width: 470px;
+            width: 100%;
+            margin: 0 auto;
+            @media screen and (max-width:991px) {
+                margin: unset;
+                margin-top: 30px;
+            }
+            margin-top: 30px;
+           
+        }
+    }
+}
+.about-us-2{
+    .item {
+        height: unset !important;
+        max-width: 270px !important;
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+    
+}
+.about-us-3{
+    padding-top: 90px;
+    padding-bottom: 120px;
+    @media screen and (max-width:991px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (max-width:565px){
+       
+    }
+    .inner {
+        background: linear-gradient(94.3deg, #161D73 -4.47%, #02073E 74.69%);
+        padding: 60px 30px;
+        @media screen and (max-width:565px){
+            padding: 30px 30px;
+        }
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 30px;
+        column-gap: 30px;
+        @media screen and (max-width:991px){
+            grid-template-columns: repeat(2,1fr);
+        }
+        @media screen and (max-width:565px){
+            grid-template-columns: repeat(1,1fr);
+        }
+        .block {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            img {
+                height: 48px;
+                width: 48px;
+                margin-right: 40px;
+            }
+            .txt {
+               
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 180%;
+                /* or 32px */
+
+                text-align: center;
+
+                color: #FFFFFF;
+            }
+        }
+    }
+}

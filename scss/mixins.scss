@@ -155,6 +155,7 @@ color: #138A07;
          
         color: #EE6000;;
         margin-right: 0px;
+        font-weight: 600;
         &::after {
             content: none;
         }
@@ -224,7 +225,7 @@ color: #138A07;
         @media screen and (max-width:1100px){
             grid-template-columns: 1fr 1fr 1fr ;
         }
-        @media screen and (max-width:800px){
+        @media screen and (max-width:991px){
             grid-template-columns: 1fr 1fr  ;
         }
         @media screen and (max-width:565px){
