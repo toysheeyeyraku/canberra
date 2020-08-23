@@ -1,77 +1,30 @@
 .products_archive{
     padding: 40px 0 30px;
-    .home-6 {
-        padding: 0px;
-        .cards {
-            grid-template-columns: repeat(3, 1fr);;
-        }
+    h1 {
+        
+        font-weight: 900;
+        font-size: 42px;
+        line-height: 120%;
+        /* or 50px */
+
+        text-align: center;
+        text-transform: capitalize;
+        margin: 0 auto;
+        /* dark_blue */
+
+        color: #02073E;
     }
-    .wr_title_with_search{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      @media (max-width: $tablet-small){
-        flex-direction: column;
-      }
-  
-      form{
-        max-width: 270px;
-        width: 100%;
-        @media (max-width: $tablet-small){
-          max-width: 100%;
-          margin-top: 25px;
-        }
-        .wr_search_form{
-          display: flex;
-          height: 40px;
-          width: 100%;
-          align-items: center;
-          justify-content: flex-start;
-          border: 1px solid #E0E0E0;
-          box-sizing: border-box;
-          padding: 7px 10px;
-          input{
-            margin-left: 10px;
-            height: 100%;
-            border: 0;
-            width: 100%;
-            font-size: 13px;
-            outline: 0;
-            line-height: 24px;
-            color: $grey;
-            &::placeholder{
-              color: $grey;
-            }
-          }
-          button{
-            display: block;
-            img{
-              height: 16px;
-            }
-            background-color: #fff;
-          }
-        }
-      }
-    }
-    .wr_sort_select{
-      margin-top: 65px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      @media (max-width: $tablet){
-        margin-top: 45px;
-      }
-      @media (max-width: $tablet-small){
-        flex-direction: column;
-      }
-      h3{
-        font-weight: 600;
+    h3{
+        color: #02073E;
+        font-weight: bold;
         font-size: 21px;
         line-height: 24px;
-        color: $black;
+        
         white-space: nowrap;
+        margin-bottom: 20px;
       }
       .wr_select{
+          margin-bottom: 20px;
         max-width: 100%;
         width: 100%;
         display: flex;
@@ -93,6 +46,49 @@
           color: $black;
         }
       }
+    .home-6 {
+        padding: 0px;
+        .cards {
+            grid-template-columns: repeat(3, 1fr);;
+            @media screen and (max-width:1200px) {
+                grid-template-columns: repeat(2, 1fr);;
+            }
+            @media screen and (max-width:991px) {
+                grid-template-columns: repeat(2, 1fr);;
+            }
+            @media screen and (max-width:768px) {
+                grid-template-columns: repeat(2, 1fr);;
+            }
+            @media screen and (max-width:565px) {
+                grid-template-columns: repeat(1, 1fr);;
+            }
+        }
+    }
+    .wr_title_with_search{
+     margin-bottom: 60px;
+      @media (max-width: $tablet-small){
+        flex-direction: column;
+      }
+      .txt {
+          text-align: center;
+          margin-top: 30px;
+      }
+     
+    }
+    .wr_sort_select{
+      margin-top: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: $tablet){
+        margin-top: 45px;
+        margin-bottom: 30px;
+      }
+      @media (max-width: $tablet-small){
+        flex-direction: column;
+      }
+      
+      
     }
     .wr_products_archive{
       margin-top: 30px;
@@ -209,6 +205,33 @@
       }
     }
     .wr_form_fillter{
+        .first {
+            padding:25px 15px;
+            background: #fff;
+            border: 1px solid #F2F2F2;
+            box-sizing: border-box;
+        }
+        .second {
+            margin-top: 40px;
+            
+           
+           form {
+            overflow-y: scroll;
+            padding: 5px 0px;
+            height: 200px;
+            
+            &::-webkit-scrollbar {
+                background: #E0E0E0;
+                border-radius: 20px;
+                width: 4px;
+            }
+            &::-webkit-scrollbar-thumb{
+                background: #00479D;
+                border-radius: 20px;
+               
+            }
+           }
+        }
       @media (max-width: $tablet){
         form{
           display: grid;

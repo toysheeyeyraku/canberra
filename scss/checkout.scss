@@ -206,7 +206,7 @@
             }
             label:after{
               transition: all 250ms ease-in;
-              content: url("../img/canberra_checkout_mark.png");
+              content: url("../img/canberra_checkout_mark.svg");
               opacity: 0;
               position: absolute;
               width: 20px;
@@ -215,7 +215,7 @@
               background-size: 100%;
               
               left: 5px;
-              top: 2px;
+              top: 5px;
             }
             label{
               transition: all 250ms ease-in;
@@ -389,7 +389,7 @@
               top: -3px !important;
             }
             &:after{
-              top: 2px !important;
+              top: 5px !important;
             }
           }
         }
@@ -551,7 +551,7 @@
             label:after{
               transition: all 250ms ease-in;
               content: '';
-              background: url("../img/canberra_checkout_mark.png");
+              background: url("../img/canberra_checkout_mark.svg");
               opacity: 0;
               position: absolute;
               width: 20px;
@@ -1012,7 +1012,7 @@
     color: #32353F;
     padding: 0 20px;
   
-    background-image: url(../../img/arrows/arrow_down.svg);
+    background-image: url("../../img/arrows/arrow_down.svg");
     background-repeat: no-repeat;
     background-position: 95% 25px;
     background-color: #fff;

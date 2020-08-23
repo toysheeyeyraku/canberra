@@ -306,15 +306,22 @@ main{
       justify-content: space-between;
       align-items: center;
       @media screen and (max-width: 991px){
-       max-width: 140px;
+       max-width: 165px;
         width: 100%;
         margin: 0 auto;
       }
-     
+      a{
+        font-weight: bolder;
+        font-size: 16px;
+      }
       .call-us-a {
       
         
-        font-weight: bolder;
+        
+       
+        
+      }
+      .p {
         font-size: 13px;
         line-height: 150%;
         /* identical to box height, or 18px */
@@ -323,9 +330,6 @@ main{
         /* black */
   
         color: #32353F;
-        
-      }
-      .p {
         font-weight: normal;
         padding-right: 10px;
         color: #000000;
@@ -397,4 +401,19 @@ main{
     -o-transition: transform 0.6s ease-out;
     transition: transform 0.6s ease-out;
     transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
+}
+.sec-check {
+width: 100%;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+/* dark_blue */
+
+color: #02073E;
+text-align: center;
+
 }
