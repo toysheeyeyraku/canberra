@@ -1,7 +1,8 @@
 .about-us-1 {
     padding: 70px 0px;
     .h {
-        font-size: 42px;
+       
+        @include fluid_font(28 ,42);
     }
     .inner {
         display: grid;

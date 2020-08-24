@@ -6,6 +6,7 @@
        max-width: 100%;
        margin-top: 40px;
        text-transform: uppercase;
+       
     }
 
     padding: 60px 0 120px;
@@ -26,6 +27,8 @@
       }
       h2{
         text-align: center;
+        color: #02073E;
+        font-weight: bold;
       }
       .wr_flex_form{
         margin-top: 25px;
@@ -68,7 +71,7 @@
   
       .wr_item_form, .form-row{
         min-height: 60px;
-        background: #FAFBFC;
+        background: #FAFAFA;;
         border: 1px solid #E0E0E0;
         display: flex;
         box-sizing: border-box;

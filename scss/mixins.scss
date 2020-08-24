@@ -418,7 +418,7 @@ color: #138A07;
 .sec {
     font-family: Martel;
         font-weight: bold;
-        font-size: 24px;
+        @include fluid_font(18,24);
         line-height: 180%;
         /* or 43px */
 
@@ -443,7 +443,7 @@ color: #138A07;
 .formmix {
     .h {
         font-weight: bold;
-        font-size: 42px;
+        @include fluid_font(24,42);
         line-height: 120%;
         /* or 50px */
 

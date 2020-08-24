@@ -601,7 +601,7 @@
           margin-bottom: 10px;
           .attribute{
             font-size: 14px;
-            color: #32353F;
+            color: #333333;
             .counter_items{
               font-size: 10px;
               color: #6D727A;
@@ -622,7 +622,8 @@
           border-bottom: 1px solid #E0E0E0;
           justify-content: space-between;
           .value{
-            font-weight: 600;
+            font-weight: bold;
+            color: #333333;
           }
         }
         .expand_links{
@@ -715,7 +716,7 @@
           min-height: 50px;
           border: 1px solid rgba(#6D727A, .5);
           border-radius: 50%;
-          font-size: 24px;
+          @include fluid_font(18,24);
           font-weight: 600;
           @media (max-width: $tablet-small){
             font-size: 20px;
@@ -729,7 +730,7 @@
         h3{
           font-size: 24px;
           text-transform: capitalize;
-          font-weight: 600;
+          font-weight: bold;
           margin-left: 20px;
           @media (max-width: $tablet-small){
             font-size: 20px;
@@ -1061,7 +1062,7 @@
   .h {
     
     font-weight: bold;
-    font-size: 32px;
+    @include fluid_font(24,32);
     line-height: 150%;
     /* identical to box height, or 48px */
     
@@ -1079,4 +1080,13 @@
     @media screen and (max-width:991px) {
         padding-bottom: 60px;
     }
+    
+}
+.attribute{
+  font-size: 14px;
+  color: #333333;
+  .counter_items{
+    font-size: 10px;
+    color: #6D727A;
+  }
 }

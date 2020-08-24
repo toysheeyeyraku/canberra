@@ -31,6 +31,7 @@
         
         font-weight: bold;
         font-size: 24px;
+        @include fluid_font(18,24);
         line-height: 120%;
         /* identical to box height, or 29px */
 

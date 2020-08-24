@@ -13,7 +13,7 @@
             font-family: Martel;
             font-style: normal;
             font-weight: 900;
-            font-size: 48px;
+            @include fluid_font(24,48);
             line-height: 120%;
             /* identical to box height, or 58px */
     
