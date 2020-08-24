@@ -403,7 +403,15 @@ main{
     transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
 }
 .sec-check {
-width: 100%;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  left: 0px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 100vw;
 font-weight: 500;
 font-size: 14px;
 line-height: 21px;

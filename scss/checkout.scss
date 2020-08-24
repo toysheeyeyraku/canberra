@@ -35,8 +35,12 @@
           .wr_head{
             color: #00479D;;
             padding-bottom: 30px;
+            @media screen and (max-width:565px){
+              padding-bottom: 15px;
+            }
             .wr_number{
               border: 1px solid #00479D;;
+              color :#00479D;
             }
           }
         }
@@ -239,6 +243,9 @@
   
       .form_address{
         margin-top: 50px;
+        @media screen and (max-width:565px){
+          margin-top: 25px;
+        }
         button{
           margin-top: 40px;
         }

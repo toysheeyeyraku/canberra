@@ -279,7 +279,17 @@ footer {
 }
 .sec-check-foot {
     padding: 60px 0px;
+
     background: unset;
+    @media screen and (max-width:991px){
+        padding: 40px 0px;
+        padding-top: 0px;
+    }
+    @media screen and (max-width:565px){
+        padding: 20px 0px;
+        padding-top: 0px;
+    }
+    padding-top: 0px;
    p{
    
     font-size: 14px;

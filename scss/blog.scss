@@ -45,6 +45,7 @@
         height: 1px;
         width: 100%;
         margin-bottom: 30px;
+        margin-top: 10px;
     }
     .last-block {
         display: flex;
@@ -149,6 +150,7 @@
             column-gap: 30px;
             row-gap: 30px;
             .block {
+                display: block;
                 margin: 0 auto;
                 background: #FFFFFF;
                 padding-bottom: 20px;
@@ -183,11 +185,27 @@
     }
 }
 .blog-post-comment {
-    background: #FFFFFF;
-    padding: 100px 0px;
+    margin-top: 120px;
     @media screen and (max-width:991px){
-        padding: 50px 0px;
+        margin-top: 60px;
     }
+    @media screen and (max-width:565px){
+        margin-top: 30px;
+    }
+    .cntpz{
+        background: #FFFFFF;
+        max-width: 1440px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 100px 0px;
+         @media screen and (max-width:991px){
+            padding: 50px 0px;
+        }
+        @media screen and (max-width:565px){
+            padding: 25px 0px;
+        }
+    }
+    
     .inner {
 
     }
